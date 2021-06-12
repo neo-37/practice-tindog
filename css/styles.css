@@ -1,0 +1,142 @@
+body{
+  font-family:'Montserrat',sans-serif;
+
+}
+.container-fluid{
+  padding:3% 15% 7%;
+}
+h1{
+  font-weight: 900;/*this is for black(the font style not color) coz font system has been updated*/
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color:white;
+
+}
+h2{
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 3rem;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+p{
+color:#8f8f8f;
+}
+#title{
+  background-color: #ff4c68;
+}
+/* navigation bar */
+.navbar-brand{
+  font-family: 'Ubuntu';
+  font-size:2.5rem;
+  font-weight: bold;
+}
+.navbar{
+  padding: 0 0 4.5rem;
+}
+.nav-item{
+  padding:0 1rem;
+}
+.nav-link{
+  font-size:1.2rem;
+  font-weight:400;
+}
+.download-button{
+  margin:5% 3% 5% 0;
+}
+.title-image{
+  width: 60%;
+  transform: rotate(25deg);
+  position:absolute;
+  right:30%;
+}
+
+.title-image-container{
+  position:relative;
+}
+
+/* features */
+#features{
+  padding: 7% 15%;
+  background-color: white;
+  /* essential for stacking to happen, both elements should have colour*/
+  position: relative;
+  z-index: 1;
+  /* even without the z-value it will be onn top of the stack as in the html file feature comes after image,
+  as seen in the flowchart */
+}
+.feature-box{
+  text-align:center;
+  line-height: 1.5;
+}
+.feature-icons{
+  color:#ef8172;
+  font-size:4rem;
+}
+.feature-icons:hover{
+  color:#ff4c68;
+}
+/* Testimonials */
+#testimonials{
+  text-align: center;
+  background-color: #ef8172;
+  color: white;
+}
+.testimonial-image{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.carousel-item{
+  padding:7% 15%;
+}
+
+#press{
+  text-align: center;
+  background-color: #ef8172;
+  padding-bottom:3%;
+}
+.press-logo{
+  width:15%;
+  margin:20px 20px 50px;
+}
+
+#pricing{
+  padding:5% 7%;
+  text-align: center;
+}
+.pricing-column{
+  padding: 3% 2%;
+}
+
+@media (max-width:1024px)
+{
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+
+}
+
+#cta{
+  padding:7% 15%;
+  text-align: center;
+  background-color:#ff4c68;
+  color: white;
+}
+.cta-heading{
+  font-size:3.5rem;
+}
+
+#footer{
+  padding:5% 15%;
+  text-align: center;
+}
+.footer-icon{
+  margin:0 10px 20px;
+}
