@@ -1,31 +1,40 @@
 body{
   font-family:'Montserrat',sans-serif;
+  text-align: center;
 
 }
-.container-fluid{
-  padding:3% 15% 7%;
-}
+
 h1{
   font-weight: 900;/*this is for black(the font style not color) coz font system has been updated*/
   font-size: 3.5rem;
   line-height: 1.5;
   color:white;
-
 }
-h2{
-  font-weight: bold;
-  line-height: 1.5;
-  font-size: 3rem;
-}
-h3{
-  font-size: 1.5rem;
+h2, h3{
   font-weight: bold;
 }
 p{
 color:#8f8f8f;
 }
-#title{
+/* container */
+.container-fluid{
+  padding:7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
   background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 /* navigation bar */
 .navbar-brand{
@@ -46,6 +55,12 @@ color:#8f8f8f;
 .download-button{
   margin:5% 3% 5% 0;
 }
+/* title section */
+
+#title .container-fluid{
+  padding: 3% 15% 7%;
+    text-align: left;
+}
 .title-image{
   width: 60%;
   transform: rotate(25deg);
@@ -59,8 +74,6 @@ color:#8f8f8f;
 
 /* features */
 #features{
-  padding: 7% 15%;
-  background-color: white;
   /* essential for stacking to happen, both elements should have colour*/
   position: relative;
   z-index: 1;
@@ -68,7 +81,6 @@ color:#8f8f8f;
   as seen in the flowchart */
 }
 .feature-box{
-  text-align:center;
   line-height: 1.5;
 }
 .feature-icons{
@@ -78,23 +90,24 @@ color:#8f8f8f;
 .feature-icons:hover{
   color:#ff4c68;
 }
+.feature-title {
+  font-size: 1.5rem;
+}
 /* Testimonials */
 #testimonials{
-  text-align: center;
   background-color: #ef8172;
-  color: white;
 }
 .testimonial-image{
   width: 10%;
   border-radius: 100%;
   margin: 20px;
 }
-.carousel-item{
-  padding:7% 15%;
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 #press{
-  text-align: center;
   background-color: #ef8172;
   padding-bottom:3%;
 }
@@ -105,12 +118,19 @@ color:#8f8f8f;
 
 #pricing{
   padding:5% 7%;
-  text-align: center;
+}
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 .pricing-column{
   padding: 3% 2%;
 }
-
+.breed-name{
+  font-size:1.5rem;
+  /* it's important to make changes for the sepcific elements rather than trying to give the change to whole container
+  ,for eg font size is for text not for a container */
+}
 @media (max-width:1024px)
 {
   #title{
@@ -123,20 +143,7 @@ color:#8f8f8f;
 
 }
 
-#cta{
-  padding:7% 15%;
-  text-align: center;
-  background-color:#ff4c68;
-  color: white;
-}
-.cta-heading{
-  font-size:3.5rem;
-}
 
-#footer{
-  padding:5% 15%;
-  text-align: center;
-}
 .footer-icon{
-  margin:0 10px 20px;
+  margin:10px 10px 30px;
 }
