@@ -68,6 +68,13 @@ color:#8f8f8f;
   right:30%;
 }
 
+.title-image2{
+  width: 70%;
+  transform: rotate(15deg);
+  position:relative;
+  left:40%;
+}
+
 .title-image-container{
   position:relative;
 }
